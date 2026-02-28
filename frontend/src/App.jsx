@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Notifications from './pages/Notifications'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/notifications" element={<Notifications />} />
       </Routes>
       </BrowserRouter>
     </AuthProvider>

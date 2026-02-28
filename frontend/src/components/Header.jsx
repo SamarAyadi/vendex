@@ -5,6 +5,7 @@ import React, { useContext, useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { Link, useLocation } from 'react-router-dom'
 import { AuthContext } from '../context/AuthContext'
+import Notifications from './../pages/Notifications';
 
 const Header = () => {
   const location= useLocation()
@@ -17,7 +18,7 @@ const Header = () => {
     {name:'Invoices',path: '/invoices'},
     {name:'Customers',path: '/customers'},
     {name:'Reports',path: '/reports'},
-    {name:'Notifications',path: '/notifications'},
+    {name:'Notifications',path: '/Notifications'},
   ]
   return (
     <motion.div initial={{opacity:0, y:-50}} animate={{opacity:1, y:0}} transition={{duration:0.6}} className="fixed top-0 w-full z-50 backdrop-blur-xl bg-[#f8f6f1] border-b border-neutral-300 shadow-md">
