@@ -23,7 +23,7 @@ const handleSubmit= async(e) => {
      await register(name, email, password)
     navigate("/")
   } catch (err) {
-    setError(err.response?.data?.message || "Login failed")
+    setError(err.response?.data?.message || "Registration failed")
   } 
 }
 
